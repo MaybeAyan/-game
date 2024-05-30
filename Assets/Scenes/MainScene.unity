@@ -88579,7 +88579,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 187434115}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7b4635748070b9438c27978e57c30ab, type: 3}
+  m_Script: {fileID: 11500000, guid: 905ecef007f268b4f8bab98a3f9cdf5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: 180
@@ -88733,7 +88733,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 235033267}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d514b0b4e4d03764e9b60ec4a44d7e6b, type: 3}
+  m_Script: {fileID: 11500000, guid: 62f92512f885b194ca3e62cd54932865, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   smoothing: 5
@@ -89007,15 +89007,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1123826211}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c939161825c1bf94ab1fb94bd7cb5cf5, type: 3}
+  m_Script: {fileID: 11500000, guid: dcd4f944673b453468e7ac1718d29801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyToSpawn: {fileID: 1246030187136746484, guid: edbeb07ce504f594abbf605b2b9ae33e, type: 3}
-  timeToSpawn: 1
+  timeToSpawn: 2
   spawnCounter: 0
   minSpawn: {fileID: 1042228956}
   maxSpawn: {fileID: 387586752}
-  checkPerFrame: 10
+  checkPerFrame: 0
 --- !u!4 &1123826213
 Transform:
   m_ObjectHideFlags: 0
@@ -89220,10 +89220,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1463239389}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 585ef7f905ede104f854a9456f2ec055, type: 3}
+  m_Script: {fileID: 11500000, guid: 03250577649b7ce4582c889974f26953, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 0, y: 0.1, z: 0}
+  offset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1488422536
 GameObject:
   m_ObjectHideFlags: 0
@@ -89355,12 +89355,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1488422536}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 135ea15e889c5a4439bc0642b783088f, type: 3}
+  m_Script: {fileID: 11500000, guid: 8de60de2cef5a0340a3874da4e3c52e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 1
   lifeTime: 3
-  growSpeed: 1
+  growSpeed: 5
   shouldKnockBack: 1
 --- !u!1 &1672114795
 GameObject:
@@ -89444,7 +89444,6 @@ GameObject:
   - component: {fileID: 1674776556}
   - component: {fileID: 1674776555}
   - component: {fileID: 1674776554}
-  - component: {fileID: 1674776560}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -89544,7 +89543,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1674776553}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61d63c4784dc6c8409aad1d579c9f0d0, type: 3}
+  m_Script: {fileID: 11500000, guid: a43de09eafbd8b44a9878007e0d6cd25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
@@ -89616,21 +89615,6 @@ Transform:
   - {fileID: 82836022}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1674776560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674776553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdfe19d4edc7e764b8d77cd721a1e8fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 0
-  maxHealth: 100
-  healthSlider: {fileID: 82444283}
 --- !u!1 &1837809295
 GameObject:
   m_ObjectHideFlags: 0
