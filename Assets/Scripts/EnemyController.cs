@@ -31,6 +31,7 @@ public class EnemyController:MonoBehaviour
             hitCounter -=Time.deltaTime;
         }
 
+        // 击退
         if (knockBackCounter > 0)
         {
             knockBackCounter -= Time.deltaTime;
@@ -58,13 +59,13 @@ public class EnemyController:MonoBehaviour
 
             // 根据移动方向改变精灵图的方向
             if (direction.x > 0)
-                transform.localScale = new Vector3(0.6f, 0.6f, 1);
+                transform.localScale = new Vector3(transform.position.x, transform.position.y, 1);
             else if (direction.x <= 0)
-                transform.localScale = new Vector3(-0.6f, 0.6f, 1);
+                transform.localScale = new Vector3(transform.position.x, transform.position.y, 1);
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player" && hitCounter <= 0)
         {
@@ -81,6 +82,8 @@ public class EnemyController:MonoBehaviour
             health = 0;
             Destroy(gameObject);
         }
+
+        DamageNumberContronller.Instance.SpawnDamage(damageToTake, transform.position);
     }
 
     public void TakeDamage(float damageToTake,bool shouldKnockback)
